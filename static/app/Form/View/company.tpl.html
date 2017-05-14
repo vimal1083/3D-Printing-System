@@ -1,0 +1,27 @@
+<div class="company" id="company">
+	<div class="container">
+		<div class="row main">
+			<div class="main-login main-center">
+			<h1>Choose Company</h1>
+				<form class="uploadimage" name="imageupload">
+					<table class="table">
+					    <thead>
+					      <tr>
+						<th>Company</th>
+						<th>Price</th>
+						<th>Action</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr ng-repeat="company in companies">
+						<td>{{company.name}}</td>
+						<td>{{company.price}}</td>
+						<td><a href="javascript:void(0);" ng-click="finalSubmit(company)"/>select</td>
+					      </tr>
+					    </tbody>
+					  </table>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

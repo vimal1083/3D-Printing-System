@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row main">
+		<div class="main-login main-center">
+		<h1>Choose Material</h1>
+			<form class="uploadimage" name="imageupload">
+				<table class="table">
+				    <thead>
+				      <tr>
+					<th>Material</th>
+					<th>Choose</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr ng-repeat="material in materials">
+					<td>{{material.name}}</td>
+					<td><a href="javascript:void(0);" ng-click="selectMaterial(material)"/>select</td>
+				      </tr>
+				    </tbody>
+				  </table>
+			</form>
+		</div>
+	</div>
+</div>
